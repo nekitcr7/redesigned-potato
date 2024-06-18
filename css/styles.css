@@ -9,7 +9,13 @@
     --font-family-heading: 'Old English Text MT', serif;
     --font-family-alt: 'Comic Sans MS', cursive;
 }
-
+@font-face {
+    font-family: 'Old English Text MT';
+    src: url('fonts/OldEnglishTextMT.woff2') format('woff2'),
+         url('fonts/OldEnglishTextMT.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     margin: 0;
     font-family: var(--font-family-main);
@@ -118,6 +124,7 @@ footer {
 }
 
 .intro h1 {
+    font-size: 2.5em;
     font-family: var(--font-family-heading);
     color: #c70101;
 }
