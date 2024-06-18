@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mūzika</title>
+    <link rel="stylesheet" href="css/music.css">
+    <!-- Подключаем Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script defer src="js/random-video.js"></script> <!-- Подключаем скрипт -->
+    <script defer src="js/video-control.js"></script> <!-- Подключаем скрипт для управления видео -->
+</head>
+<body>
+    <div class="video-background">
+        <video id="background-video" autoplay muted loop>
+            <source src="" type="video/mp4">
+            Ваш браузер не поддерживает воспроизведение видео.
+        </video>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Galvena</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfelis</a></li>
+                <li><a href="music.html"><i class="fas fa-music"></i> Mūzika</a></li>
+                <li><a href="quiz.html"><i class="fas fa-question-circle"></i> Viktorīna</a></li>
+                <li><a href="todo.html"><i class="fas fa-tasks"></i> Uzdevumi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <h1>Bēdu Varons</h1>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="images/lil_peep1.jpg" alt="Lil Peep 1">
+                    </div>
+                    <div class="slide">
+                        <img src="images/lil_peep2.jpg" alt="Lil Peep 2">
+                    </div>
+                    <div class="slide">
+                        <img src="images/lil_peep3.jpg" alt="Lil Peep 3">
+                    </div>
+                    <div class="slide">
+                        <img src="images/lil_peep4.jpg" alt="Lil Peep 4">
+                    </div>
+                    <div class="slide">
+                        <img src="images/lil_peep5.jpg" alt="Lil Peep 5">
+                    </div>
+                </div>
+            </div>
+            <div class="slider-controls">
+                <button id="prev">&#10094;</button>
+                <button id="next">&#10095;</button>
+            </div>
+        </section>
+        <section class="biography">
+            <p>Gustav Åhr, labāk pazīstams ar savu skatuves vārdu Lil Peep, bija amerikāņu reperis, dziedātājs un dziesmu autors. Viņš dzimis 1996. gada 1. novembrī Alentaunā, Pensilvānijas štatā, un uzauga Longbīčā, Ņujorkas štatā. Lil Peep bija novators emo repa žanrā, apvienojot hiphopa, emo un pankroka elementus, radot unikālu skanējumu, kas piesaistīja plašu auditoriju. Viņa mūzikā bieži tika apskatītas tēmas par depresiju, narkotiku lietošanu un attiecībām, piedāvājot atklātu un godīgu ieskatu viņa dzīvē un grūtībās. Neskatoties uz traģiski īso karjeru, viņš atstāja paliekošu iespaidu mūzikas industrijā un savos fanos visā pasaulē. Lil Peep nomira 2017. gada 15. novembrī, 21 gada vecumā, bet viņa mūzika turpina iedvesmot jaunas paaudzes māksliniekus un klausītājus.</p>
+            <h2>Kāpēc viņš man patīk</h2>
+            <p>Man ļoti patīk Lil Peep mūzika, jo viņš spēja būt ļoti atklāts par savām jūtām un pieredzi. Viņa dziesмас atspoguļо reālas emocijas un grūtības, kas padara viņа мūзику ļoti personīgu un piesкārīgu. Viņš bija ne tikai mākslinieks, bet arī autentiska personība, kas paliek aktuāla daudziem cilvēkiem arī pēc viņа aiziešanas. Lil Peep mūzika man palīdz sajusties saprastam un atbalstītam, it īpaši grūtos brīžos. Viņa drosme būt godīgam un atklātам par savām cīņām ir ļoti iedvesмоjoša, un tas ir tas, kas padara viņу tik īpašu man un daudziem citiem cilvēkiem.</p>
+        </section>
+        <section class="top-songs">
+            <h2>Top 3 Dziesmas</h2>
+            <div class="video">
+                <video width="560" height="315" controls autoplay name="media">
+                    <source src="videos/Lil Peep - worlds away (Official Audio).mp4" type="video/mp4">
+                    Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+                <p class="quote pink">Worlds Away</p>
+                <p class="quote">"She don't even know my name, but she look me in the eyes like she know my pain."</p>
+            </div>
+            <div class="video">
+                <video width="560" height="315" controls autoplay name="media">
+                    <source src="videos/lil peep & lil tracy - i crash, u crash [extended w_ lyrics].mp4" type="video/mp4">
+                    Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+                <p class="quote pink">I Crash, U Crash</p>
+                <p class="quote">"What do you want? Let me sing you a song."</p>
+            </div>
+            <div class="video">
+                <video width="560" height="315" controls autoplay name="media">
+                    <source src="videos/LiL PEEP - High School (Lyrics).mp4" type="video/mp4">
+                    Ваш браузер не поддерживает воспроизведение видео.
+                </video>
+                <p class="quote pink">High School</p>
+                <p>"Have you ever seen a man this rich, this broke? This lost in the smoke?</p>
+                <p class="quote highlight">Please pray for me."</p> <!-- Применяем стиль заголовка -->
+            </div>
+        </section>
+        <section class="background-music">
+            <button id="music-toggle" class="music-button">
+                <i class="fas fa-volume-mute" id="music-icon"></i>
+            </button>
+            <audio id="background-audio" loop>
+                <source src="music/lil_peep_background.mp3" type="audio/mp3">
+                Ваш браузер не поддерживает аудио.
+            </audio>
+        </section>
+        <section class="top-albums">
+            <h2>Top Albumi</h2>
+            <div class="albums">
+                <div class="album">
+                    <img src="images/21lil_peep3.jpg" alt="Hellboy">
+                    <p>Hellboy</p>
+                </div>
+                <div class="album">
+                    <img src="images/ab67616d0000b2739fd952223df9ce654688138f.jfif" alt="CASTLES II">
+                    <p>CASTLES II</p>
+                </div>
+                <div class="album">
+                    <img src="images/15954d367540a66fdc5d1f3449383ad7.1000x1000x1.jpg" alt="Part One">
+                    <p>Part One</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nikita Belosheev</p>
+    </footer>
+    <script src="js/slider.js"></script>
+    <script src="js/music-toggle.js"></script>
+</body>
+</html>

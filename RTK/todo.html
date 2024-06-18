@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uzdevumi</title>
+    <link rel="stylesheet" href="css/todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Galvena</a></li>
+                <li><a href="portfolio.html"><i class="fas fa-briefcase"></i> Portfelis</a></li>
+                <li><a href="music.html"><i class="fas fa-music"></i> Mūzika</a></li>
+                <li><a href="quiz.html"><i class="fas fa-question-circle"></i> Viktorīna</a></li>
+                <li><a href="todo.html"><i class="fas fa-tasks"></i> Uzdevumi</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="task-manager">
+            <h1>Uzdevumu pārvaldnieks</h1>
+            <div class="task-input">
+                <input type="text" id="taskInput" placeholder="Pievienot jaunu uzdevumu...">
+                <button onclick="addTask()">Pievienot</button>
+            </div>
+            <ul id="taskList"></ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nikita Belosheev</p>
+    </footer>
+    <script src="js/todo.js"></script>
+</body>
+</html>
