@@ -1,4 +1,9 @@
 /* Основные стили для страницы */
+:root {
+    --font-family-main: 'Arial', sans-serif;
+    --font-family-heading: 'Old English Text MT', serif;
+    --font-family-alt: 'Comic Sans MS', cursive;
+}
 @font-face {
     font-family: 'Old English Text MT';
     src: url('fonts/OldEnglishTextMT.woff2') format('woff2'),
@@ -9,7 +14,7 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    color: #ffffff;
+    color: #f0f0f0;
     overflow-x: hidden;
     background: #121212; /* Темный фон для контраста */
 }
