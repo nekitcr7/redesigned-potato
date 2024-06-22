@@ -1,54 +1,54 @@
 document.addEventListener("DOMContentLoaded", function() {
     const questions = [
         {
-            question: "Kas ir galvaspilsēta Latvijā?",
-            options: ["Rīga", "Tallina", "Viļņa", "Kaļiningrada"],
+            question: "Kāds ir Lil Peep īstais vārds?",
+            options: ["Gustavs Elija Ārs", "Kalvins Kordozars Broduss", "Ostins Ričards Posts", "Maršals Brūss Meterss"],
             correct: 0
         },
         {
-            question: "Kurš no šiem ir latviešu tautasdziesmu krājuma sastādītājs?",
-            options: ["Krišjānis Barons", "Rainis", "Aspazija", "Zigmunds Skujiņš"],
+            question: "Kad piedzima Lil Peep?",
+            options: ["1996. gada 1. novembris", "1996. gada 15. septembris", "1995. gada 9. maijs", "1993. gada 21. oktobris"],
             correct: 0
         },
         {
-            question: "Kurā gadā tika dibināta Latvijas Republika?",
-            options: ["1918", "1920", "1934", "1940"],
-            correct: 0
-        },
-        {
-            question: "Kurš ir Latvijā dzimušais slavenais mākslinieks?",
-            options: ["Vilhelms Purvītis", "Mikelandželo", "Rembrants", "Van Gogs"],
-            correct: 0
-        },
-        {
-            question: "Kurš latviešu dzejnieks ir autors dzejolim 'Gaismas pils'?",
-            options: ["Rainis", "Aspazija", "Jānis Rainis", "Andrejs Pumpurs"],
+            question: "Kā sauc Lil Peep debijas miksteipu?",
+            options: ["Hellboy", "Come Over When You're Sober", "Crybaby", "Part One"],
             correct: 3
         },
         {
-            question: "Kurā gadā Latvija pievienojās Eiropas Savienībai?",
-            options: ["2000", "2004", "2006", "2010"],
-            correct: 1
-        },
-        {
-            question: "Kāds ir latviešu tautas tērpu īpašais aksesuārs?",
-            options: ["Lūši", "Stips", "Ziedi", "Austiņas"],
-            correct: 1
-        },
-        {
-            question: "Kuru upi tek cauri Rīgai?",
-            options: ["Daugava", "Lielupe", "Venta", "Gauja"],
+            question: "Kura no minētajām grupām iedvesmoja Lil Peep veidot savu mūziku?",
+            options: ["My Chemical Romance", "Nirvana", "The Beatles", "Green Day"],
             correct: 0
         },
         {
-            question: "Kurš ir Latvijas nacionālais dzīvnieks?",
-            options: ["Lūsis", "Aļņi", "Bebrs", "Stārķis"],
+            question: "Kā sauc vienu no populārākajām Lil Peep dziesmām?",
+            options: ["Star Shopping", "Lucid Dreams", "Rockstar", "Mo Bamba"],
             correct: 0
         },
         {
-            question: "Kurā gadā notika Latvijas Atmoda?",
-            options: ["1988", "1990", "1991", "1994"],
+            question: "Kādā vecumā Lil Peep pieņēma savu pseidonīmu?",
+            options: ["16 gadi", "17 gadi", "18 gadi", "20 gadi"],
+            correct: 1
+        },
+        {
+            question: "Kuru žanru visvairāk raksturo Lil Peep mūzika?",
+            options: ["Roks", "Hip-hop", "Emo rep", "Elektroniskā mūzika"],
             correct: 2
+        },
+        {
+            question: "Kuru no šiem iesaukām Lil Peep izmantoja savā albumā?",
+            options: ["Emo King", "Hellboy", "Lil", "White Tee"],
+            correct: 1
+        },
+        {
+            question: "Kāds notikums būtiski ietekmēja Lil Peep radošo darbu?",
+            options: ["Šķiršanās ar draudzeni", "Pārcelšanās uz Losandželosu", "Drauga nāve", "Depresija"],
+            correct: 1
+        },
+        {
+            question: "Kad Lil Peep nomira?",
+            options: ["2017. gada 15. novembris", "2017. gada 7. decembris", "2018. gada 23. janvāris", "2018. gada 1. novembris"],
+            correct: 0
         }
     ];
 
