@@ -4,6 +4,7 @@
     --font-family-heading: 'Old English Text MT', serif;
     --font-family-alt: 'Comic Sans MS', cursive;
 }
+
 @font-face {
     font-family: 'Old English Text MT';
     src: url('fonts/OldEnglishTextMT.woff2') format('woff2'),
@@ -11,6 +12,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Comic Sans MS';
     src: url('fonts/ComicSansMS.woff2') format('woff2'),
@@ -18,9 +20,10 @@
     font-weight: normal;
     font-style: normal;
 }
+
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: var(--font-family-main);
     color: #f0f0f0;
     overflow-x: hidden;
     background: #121212; /* Темный фон для контраста */
@@ -71,7 +74,7 @@ header nav ul {
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px 0;
     justify-content: center;
-    font-family: 'Old English Text MT', serif; /* Применяем шрифт */
+    font-family: var(--font-family-heading); /* Применяем шрифт */
 }
 
 header nav ul li {
@@ -101,7 +104,7 @@ main {
 
 /* Биография */
 .bio h1 {
-    font-family: 'Old English Text MT', serif;
+    font-family: var(--font-family-heading);
     font-size: 2.5em;
     color: #ffb52b;
     text-align: center;
@@ -109,7 +112,7 @@ main {
 }
 
 .bio p {
-    font-family: 'Comic Sans MS', cursive;
+    font-family: var(--font-family-alt);
     font-size: 1.2em;
     text-align: center;
     max-width: 800px;
@@ -123,7 +126,7 @@ main {
 }
 
 .institutions h1, .photos h2 {
-    font-family: 'Old English Text MT', serif;
+    font-family: var(--font-family-heading);
     font-size: 2em;
     color: #ffb52b;
     margin-bottom: 20px;
@@ -152,7 +155,7 @@ main {
 }
 
 .institution p, .photo p {
-    font-family: 'Comic Sans MS', cursive;
+    font-family: var(--font-family-alt);
     font-size: 1.2em;
     color: #ffb52b;
     margin-top: 10px;
@@ -169,7 +172,7 @@ footer {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.7);
     color: #ffb52b;
-    font-family: 'Old English Text MT', serif;
+    font-family: var(--font-family-heading);
     border-top: 2px solid #ffb52b;
     margin-top: 20px;
 }
