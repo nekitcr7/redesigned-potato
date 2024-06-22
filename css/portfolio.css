@@ -125,7 +125,7 @@ main {
     margin: 20px 0;
 }
 
-.institutions h1, .photos h2 {
+.photos h2 {
     font-family: var(--font-family-heading);
     font-size: 2em;
     color: #ffb52b;
