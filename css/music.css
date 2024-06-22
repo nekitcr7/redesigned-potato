@@ -6,6 +6,13 @@
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url('fonts/ComicSansMS.woff2') format('woff2'),
+         url('fonts/ComicSansMS.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
