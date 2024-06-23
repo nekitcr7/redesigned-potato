@@ -1,11 +1,9 @@
-
 document.addEventListener('DOMContentLoaded', function() {
-    const audioElements = document.querySelectorAll('audio');
+    const audioElement = document.getElementById('background-audio');
     const musicToggleButton = document.getElementById('music-toggle');
     const musicIcon = document.getElementById('music-icon');
-    const videoElements = document.querySelectorAll('video');
+    const videoPlayers = document.querySelectorAll('video[controls]'); 
     let isPlaying = false;
-    let wasPlayingBeforeHidden = false;
 
     function updateIcon() {
         if (isPlaying) {
@@ -16,90 +14,51 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function toggleMusic() {
-        audioElements.forEach(audioElement => {
-            if (isPlaying) {
-                audioElement.pause();
-            } else {
-                audioElement.play().catch(error => {
-                    console.error('Error playing audio:', error);
-                    alert('Could not play audio: ' + error.message);
-                });
-            }
-        });
-        isPlaying = !isPlaying;
+        if (isPlaying) {
+            audioElement.pause();
+            isPlaying = false;
+        } else {
+            audioElement.play().catch(error => {
+                console.log('Error playing audio:', error);
+            });
+            isPlaying = true;
+        }
         updateIcon();
-        localStorage.setItem('isPlaying', isPlaying);
+        sessionStorage.setItem('isPlaying', isPlaying);
     }
 
     function restoreMusicState() {
-        const savedState = localStorage.getItem('isPlaying');
+        const savedState = sessionStorage.getItem('isPlaying');
         if (savedState === 'true') {
             isPlaying = true;
+            audioElement.play().catch(error => {
+                console.log('Error playing audio:', error);
+            });
         } else {
             isPlaying = false;
         }
         updateIcon();
     }
 
-    function userInteractionHandler() {
-        restoreMusicState();
-        document.removeEventListener('click', userInteractionHandler);
+    function pauseMusic() {
+        if (isPlaying) {
+            audioElement.pause();
+        }
     }
 
-    document.addEventListener('click', userInteractionHandler);
+    function resumeMusic() {
+        if (sessionStorage.getItem('isPlaying') === 'true') {
+            audioElement.play().catch(error => {
+                console.log('Error playing audio:', error);
+            });
+        }
+    }
 
     musicToggleButton.addEventListener('click', toggleMusic);
-
-    videoElements.forEach(videoElement => {
-        videoElement.addEventListener('play', () => {
-            if (isPlaying) {
-                audioElements.forEach(audioElement => audioElement.pause());
-                isPlaying = false;
-                updateIcon();
-            }
-        });
-
-        videoElement.addEventListener('pause', () => {
-            if (wasPlayingBeforeHidden) {
-                audioElements.forEach(audioElement => {
-                    audioElement.play().catch(error => {
-                        console.error('Error playing audio:', error);
-                        alert('Could not play audio: ' + error.message);
-                    });
-                });
-                isPlaying = true;
-                updateIcon();
-            }
-        });
-
-        videoElement.addEventListener('ended', () => {
-            if (wasPlayingBeforeHidden) {
-                audioElements.forEach(audioElement => {
-                    audioElement.play().catch(error => {
-                        console.error('Error playing audio:', error);
-                        alert('Could not play audio: ' + error.message);
-                    });
-                });
-                isPlaying = true;
-                updateIcon();
-            }
-        });
+    videoPlayers.forEach(videoPlayer => {
+        videoPlayer.addEventListener('play', pauseMusic);
+        videoPlayer.addEventListener('pause', resumeMusic);
     });
 
-    document.addEventListener('visibilitychange', () => {
-        if (document.visibilityState === 'hidden') {
-            wasPlayingBeforeHidden = isPlaying;
-            audioElements.forEach(audioElement => audioElement.pause());
-            isPlaying = false;
-        } else if (document.visibilityState === 'visible' && wasPlayingBeforeHidden) {
-            audioElements.forEach(audioElement => {
-                audioElement.play().catch(error => {
-                    console.error('Error playing audio:', error);
-                    alert('Could not play audio: ' + error.message);
-                });
-            });
-            isPlaying = true;
-            updateIcon();
-        }
-    });
+    restoreMusicState();
 });
