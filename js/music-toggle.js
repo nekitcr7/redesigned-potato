@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const musicIcon = document.getElementById('music-icon');
     let isPlaying = false;
 
-    // Функция для обновления иконки
+
     function updateIcon() {
         if (isPlaying) {
             musicIcon.className = 'fas fa-volume-up';
@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
-    // Обработчик для кнопки включения/выключения аудио
+
     musicToggleButton.addEventListener('click', function() {
         if (isPlaying) {
             audioElement.pause();
@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
         isPlaying = !isPlaying;
-        updateIcon(); // Обновляем иконку при клике
+        updateIcon(); 
     });
 
-    // Инициализируем иконку при загрузке страницы
+ 
     updateIcon();
 });

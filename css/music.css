@@ -1,4 +1,4 @@
-/* Основные стили для страницы музыки */
+
 @font-face {
     font-family: 'Old English Text MT';
     src: url('fonts/OldEnglishTextMT.woff2') format('woff2'),
@@ -18,33 +18,33 @@ body {
     font-family: 'Arial', sans-serif;
     color: #ffffff;
     overflow-x: hidden;
-    background: #121212; /* Темный фон для контраста */
+    background: #121212; 
 }
 
-/* Ползунок */
+
 body::-webkit-scrollbar {
     width: 10px;
 }
 
-/* Трек прокрутки */
+
 body::-webkit-scrollbar-track {
-    background: #000000; /* Цвет трека */
-    border-radius: 10px; /* Закругленные углы */
+    background: #000000; 
+    border-radius: 10px; 
 }
 
-/* Ползунок прокрутки */
+
 body::-webkit-scrollbar-thumb {
-    background-color: #ff69b4; /* Цвет ползунка */
-    border-radius: 10px; /* Закругленные углы */
-    border: 2px solid #000000; /* Граница для улучшения видимости */
+    background-color: #ff69b4; 
+    border-radius: 10px; 
+    border: 2px solid #000000; 
 }
 
-/* Ползунок при наведении */
+
 body::-webkit-scrollbar-thumb:hover {
-    background-color: #ff1493; /* Цвет ползунка при наведении */
+    background-color: #ff1493; 
 }
 
-/* Фон */
+
 .video-background {
     position: fixed;
     top: 0;
@@ -62,14 +62,13 @@ body::-webkit-scrollbar-thumb:hover {
     filter: brightness(50%);
 }
 
-/* Меню */
 header nav ul {
     display: flex;
     list-style: none;
     background-color: rgba(0, 0, 0, 0.7);
     padding: 10px 0;
     justify-content: center;
-    font-family: 'Old English Text MT', serif; /* Применяем шрифт */
+    font-family: 'Old English Text MT', serif; 
 }
 
 header nav ul li {
@@ -79,7 +78,7 @@ header nav ul li {
 header nav ul li a {
     color: #ff69b4;
     text-decoration: none;
-    font-size: 1.5em; /* Увеличиваем размер шрифта для меню */
+    font-size: 1.5em; 
     transition: color 0.3s;
 }
 
@@ -87,17 +86,17 @@ header nav ul li a:hover {
     color: #ffffff;
 }
 
-/* Основное содержимое */
+
 main {
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Добавляем тень для контраста */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); 
 }
 
-/* Галерея */
+
 .gallery {
     text-align: center;
 }
@@ -143,17 +142,17 @@ main {
     justify-content: space-between;
     transform: translateY(-50%);
     z-index: 2;
-    padding: 0 10px; /* Уменьшаем боковые отступы */
+    padding: 0 10px; 
     box-sizing: border-box;
 }
 
 .slider-controls button {
     background-color: rgba(255, 105, 180, 0.8);
     border: none;
-    padding: 10px; /* Увеличиваем padding для более аккуратного вида */
+    padding: 10px; 
     cursor: pointer;
     border-radius: 50%;
-    font-size: 1.5em; /* Размер иконки уменьшен для лучшего размещения */
+    font-size: 1.5em; 
     color: white;
     transition: background-color 0.3s;
     outline: none;
@@ -163,7 +162,7 @@ main {
     align-items: center;
     justify-content: center;
     position: absolute;
-    box-sizing: border-box; /* Учитываем padding при расчете размера */
+    box-sizing: border-box; 
 }
 
 .slider-controls button:hover {
@@ -178,7 +177,7 @@ main {
     right: 20px;
 }
 
-/* Биография и топ песни */
+
 .biography, .top-songs {
     margin-bottom: 30px;
 }
@@ -198,7 +197,7 @@ main {
     margin: 0 auto;
 }
 
-/* Видео */
+
 .video {
     margin: 20px 0;
     text-align: center;
@@ -213,7 +212,7 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Музыкальная кнопка */
+
 .background-music {
     text-align: center;
     margin-top: 20px;
@@ -229,7 +228,7 @@ main {
     align-items: center;
     justify-content: center;
     position: fixed;
-    bottom: 80px; /* Отступ снизу, чтобы не касаться footer */
+    bottom: 80px; 
     left: 20px;
     z-index: 10;
     cursor: pointer;
@@ -246,7 +245,7 @@ main {
     font-size: 24px;
 }
 
-/* Футер */
+
 footer {
     text-align: center;
     padding: 10px;
@@ -268,7 +267,7 @@ footer {
     font-size: 1.2em;
 }
 
-/* Стили для раздела альбомов */
+
 .top-albums {
     padding: 20px;
     max-width: 1000px;
@@ -289,13 +288,13 @@ footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 40px; /* Добавляем пространство между альбомами */
+    gap: 40px; 
 }
 
 .album {
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
-    flex: 1 1 30%; /* Альбомы занимают 30% ширины с возможностью сжиматься и расширяться */
+    flex: 1 1 30%; 
     margin: 20px;
     max-width: 200px;
     box-sizing: border-box;
@@ -316,7 +315,7 @@ footer {
     margin-top: 10px;
 }
 
-/* Эффект увеличения при наведении */
+
 .album:hover img {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);

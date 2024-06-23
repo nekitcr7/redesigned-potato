@@ -5,10 +5,9 @@ document.addEventListener('DOMContentLoaded', function() {
         'videos/lil_peep_background2.mp4'
     ];
 
-    // Получаем предыдущее видео из localStorage
+  
     let lastVideo = localStorage.getItem('lastVideo');
     
-    // Определяем индекс для следующего видео
     let nextVideoIndex;
     if (lastVideo === sources[0]) {
         nextVideoIndex = 1;
@@ -18,10 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const selectedVideo = sources[nextVideoIndex];
 
-    // Устанавливаем новое видео
     videoElement.querySelector('source').src = selectedVideo;
     videoElement.load();
 
-    // Сохраняем текущее видео в localStorage для следующего обновления
     localStorage.setItem('lastVideo', selectedVideo);
 });

@@ -1,10 +1,10 @@
-/* Основные стили */
+
 :root {
-    --primary-color: #8B0000; /* Темный красный */
-    --secondary-color: #A52A2A; /* Коричнево-красный */
-    --background-color: #0D0D0D; /* Очень темный серый */
-    --text-color: #F5F5F5; /* Очень светлый серый */
-    --accent-color: #ff0000; /* Красный */
+    --primary-color: #8B0000; 
+    --secondary-color: #A52A2A; 
+    --background-color: #0D0D0D; 
+    --text-color: #F5F5F5; 
+    --accent-color: #ff0000; 
     --font-family-main: 'Arial', sans-serif;
     --font-family-heading: 'Old English Text MT', serif;
     --font-family-alt: 'Comic Sans MS', cursive;
@@ -36,7 +36,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #1C1C1C; /* Очень темный серый для трека */
+    background: #1C1C1C; 
     border-radius: 10px;
 }
 
@@ -50,7 +50,7 @@ body::-webkit-scrollbar-thumb:hover {
     background-color: var(--secondary-color);
 }
 
-/* Видео фон */
+
 .video-background {
     position: fixed;
     top: 0;
@@ -58,22 +58,22 @@ body::-webkit-scrollbar-thumb:hover {
     width: 100%;
     height: 100%;
     overflow: hidden;
-    z-index: -1; /* Фон за остальным содержимым */
+    z-index: -1; 
 }
 
 .video-background video {
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Вписываем видео в контейнер */
-    opacity: 0.5; /* Полупрозрачное видео */
-    filter: brightness(0.5); /* Затемняем видео для лучшего контраста */
+    object-fit: cover; 
+    opacity: 0.5; 
+    filter: brightness(0.5); 
 }
 
-/* Меню */
+
 header nav ul {
     display: flex;
     list-style: none;
-    background-color: rgba(0, 0, 0, 0.8); /* Полупрозрачный темный фон */
+    background-color: rgba(0, 0, 0, 0.8); 
     padding: 10px 0;
     justify-content: center;
     font-family: var(--font-family-heading);
@@ -94,7 +94,7 @@ header nav ul li a:hover {
     color: var(--text-color);
 }
 
-/* Основное содержимое */
+
 main {
     padding: 20px;
     max-width: 1000px;
@@ -102,11 +102,11 @@ main {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    position: relative; /* Относительное позиционирование для наложения на видео */
+    position: relative; 
     z-index: 1;
 }
 
-/* Футер */
+
 footer {
     text-align: center;
     padding: 10px;
@@ -119,11 +119,10 @@ footer {
     z-index: 1;
 }
 
-/* Пример использования классов */
 .intro {
     text-align: center;
     padding: 20px;
-    background-color: rgba(139, 0, 0, 0.1); /* Темный красный */
+    background-color: rgba(139, 0, 0, 0.1); 
     border-radius: 10px;
     margin: 20px 0;
     position: relative;

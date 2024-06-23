@@ -4,9 +4,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const musicIcon = document.getElementById('music-icon');
     const videos = document.querySelectorAll('video');
     let isPlaying = false;
-    let wasPlayingBeforeVideo = false; // Переменная для отслеживания, играла ли музыка до воспроизведения видео
+    let wasPlayingBeforeVideo = false; 
 
-    // Функция для переключения состояния воспроизведения музыки
+  
     function toggleMusic() {
         if (isPlaying) {
             audioElement.pause();
@@ -20,12 +20,11 @@ document.addEventListener('DOMContentLoaded', function() {
         isPlaying = !isPlaying;
     }
 
-    // Обработчик нажатия на кнопку музыки
+   
     musicToggleButton.addEventListener('click', toggleMusic);
 
-    // Обработчики событий для каждого видео
+    
     videos.forEach(video => {
-        // Когда видео начинает воспроизведение
         video.addEventListener('play', () => {
             if (isPlaying) {
                 wasPlayingBeforeVideo = true;
@@ -37,7 +36,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Когда видео приостанавливается
         video.addEventListener('pause', () => {
             if (wasPlayingBeforeVideo) {
                 audioElement.play().catch(error => console.log('Error playing audio:', error));
@@ -46,7 +44,6 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
 
-        // Когда видео заканчивается
         video.addEventListener('ended', () => {
             if (wasPlayingBeforeVideo) {
                 audioElement.play().catch(error => console.log('Error playing audio:', error));

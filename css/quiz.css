@@ -1,4 +1,4 @@
-/* Основные стили */
+
 @font-face {
     font-family: 'Old English Text MT';
     src: url('fonts/OldEnglishTextMT.woff2') format('woff2'),
@@ -16,9 +16,9 @@
 body {
     margin: 0;
     font-family: 'Arial', sans-serif;
-    color: #f0f0f0; /* Более мягкий цвет для текста */
+    color: #f0f0f0; 
     overflow-x: hidden;
-    background: #1a1a1a; /* Немного светлее для контраста */
+    background: #1a1a1a; 
 }
 
 body::-webkit-scrollbar {
@@ -26,24 +26,24 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-track {
-    background: #333333; /* Более светлый трек для лучшего контраста */
+    background: #333333; 
     border-radius: 10px;
 }
 
 body::-webkit-scrollbar-thumb {
     background-color: #e74c3c;
     border-radius: 10px;
-    border: 2px solid #333333; /* Соответствует фону трека */
+    border: 2px solid #333333; 
 }
 
 body::-webkit-scrollbar-thumb:hover {
-    background-color: #d63c2c; /* Немного затемнённый оттенок при наведении */
+    background-color: #d63c2c; 
 }
 
 header nav ul {
     display: flex;
     list-style: none;
-    background-color: rgba(34, 34, 34, 0.9); /* Более насыщенный фон */
+    background-color: rgba(34, 34, 34, 0.9); 
     padding: 10px 0;
     justify-content: center;
     font-family: 'Old English Text MT', serif;
@@ -61,14 +61,14 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    color: #f0f0f0; /* Мягкий белый цвет при наведении */
+    color: #f0f0f0; 
 }
 
 main {
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: rgba(34, 34, 34, 0.9); /* Единый фон с header */
+    background-color: rgba(34, 34, 34, 0.9); 
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
@@ -92,7 +92,7 @@ main {
     font-family: 'Comic Sans MS', cursive;
     font-size: 1.5em;
     margin-bottom: 20px;
-    color: #f0f0f0; /* Текст вопросов в мягком белом */
+    color: #f0f0f0; 
 }
 
 #options {
@@ -128,7 +128,7 @@ main {
 }
 
 #options li button:hover {
-    color: #f0f0f0; /* Мягкий белый при наведении */
+    color: #f0f0f0; 
 }
 
 #options li button:focus {
@@ -136,12 +136,12 @@ main {
 }
 
 #options li.correct {
-    background-color: #27ae60; /* Зеленый цвет для правильного ответа */
+    background-color: #27ae60; 
     color: white;
 }
 
 #options li.wrong {
-    background-color: #c0392b; /* Темно-красный цвет для неправильного ответа */
+    background-color: #c0392b; 
     color: white;
 }
 
@@ -151,13 +151,13 @@ button {
     border-radius: 10px;
     padding: 10px 20px;
     font-size: 1.2em;
-    color: #f0f0f0; /* Мягкий белый текст */
+    color: #f0f0f0;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.3s;
 }
 
 button:hover {
-    background-color: #d63c2c; /* Затемнённый оттенок при наведении */
+    background-color: #d63c2c; 
     transform: scale(1.1);
 }
 
@@ -175,7 +175,7 @@ button:active, button:focus {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: rgba(34, 34, 34, 0.9); /* Соответствие с header и main */
+    background-color: rgba(34, 34, 34, 0.9); 
     color: #e74c3c;
     font-family: 'Old English Text MT', serif;
     border-top: 2px solid #e74c3c;

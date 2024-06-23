@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function() {
             score++;
         } else {
             button.parentElement.classList.add('wrong');
-            buttons[correctIndex].parentElement.classList.add('correct'); // Подсвечиваем правильный ответ
+            buttons[correctIndex].parentElement.classList.add('correct'); 
         }
     
         buttons.forEach(btn => btn.disabled = true);
