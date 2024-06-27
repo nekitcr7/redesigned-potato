@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const questions = [
         {
             question: "Kāds ir Lil Peep īstais vārds?",
-            options: ["Gustavs Elija Ārs", "Kalvins Kordozars Broduss", "Ostins Ričards Posts", "Maršals Brūss Meterss"],
+            options: ["Gustav Elijah Åhr", "Shawn Carter", "Andre Young", "Calvin Broadus"],
             correct: 0
         },
         {
